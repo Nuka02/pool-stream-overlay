@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Aspira';
+    src: url(../assets/font/Aspira-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    background-color: blue;
+    display: flex;
+}
+
+.edge {
+    width: 1%;
+    height: 60px;
+}
+
+.first {
+    background-color: rgba(213,190,66,255);
+}
+
+.last {
+    background-color: rgba(218,225,235,255);
+}
+
+.mid {
+    width: 14%;
+    background-color: rgba(41,42,47,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.race-to {
+    color: white;
+    font-size: 1.5em;
+    font-family: Aspira, serif;
+    line-height: 1.5em;
+}
+
+.light {
+    background-color: rgba(255,255,255,255);
+    position: absolute;
+    opacity: 15%;
+    height: 2%;
+    width: 80%;
+}
+
+.player {
+    width: 43%;
+    background-color: rgba(14,82,185,255);
+    display: flex;
+    font-family: Aspira, serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.flag {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 15px;
+}
+
+.flag-hg {
+    height: 25px;
+}
+
+.player .left {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.pl {
+    padding-right: 20px;
+}
+
+.pr {
+    padding-left: 20px;
+}
+
+#p1-score, #p2-score {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.player-info {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    /* padding-inline: 20px; */
+}
+
+.player .right {
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
+.discipline {
+    border-radius: 10px;
+    background-color: rgba(41,42,47,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Aspira, serif;
+    font-size: 1em;
+    width: 7%;
+    height: 25%;
+    margin: 10px auto 0;
+}
