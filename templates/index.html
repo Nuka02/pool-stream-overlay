@@ -35,9 +35,31 @@
 
         </div>
         <div class="discipline" id="discipline"></div>
+
+        <!-- Shot Clock Display -->
+      <div id="p1-shotclock" style="display:none;" class="shotclock">
+          <div class="shotclock-light"></div>
+          <div class="shotclock-extension">Ex</div>
+          <div class="shotclock-bar"></div>
+          <div class="shotclock-time"></div>
+      </div>
+
+      <div id="p2-shotclock" style="display:none;" class="shotclock">
+          <div class="shotclock-light"></div>
+          <div class="shotclock-extension">Ex</div>
+          <div class="shotclock-bar"></div>
+          <div class="shotclock-time"></div>
+      </div>
+
     </div>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="../static/js/script.js"></script>
+    <audio id="alarm-sound-p1" src="/static/assets/alarm.mp3" preload="auto"></audio>
+    <audio id="alarm-sound-p2" src="/static/assets/alarm.mp3" preload="auto"></audio>
+    <audio id="buzz-sound-p1" src="/static/assets/buzz.mp3" preload="auto"></audio>
+    <audio id="buzz-sound-p2" src="/static/assets/buzz.mp3" preload="auto"></audio>
+
+
 </body>
 </html>

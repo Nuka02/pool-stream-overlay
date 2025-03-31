@@ -15,6 +15,12 @@ body {
     height: 60px;
     background-color: blue;
     display: flex;
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
 }
 
 .edge {
@@ -48,9 +54,17 @@ body {
 .light {
     background-color: rgba(255,255,255,255);
     position: absolute;
+    opacity: 4%;
+    height: 50%;
+    width: 100%;
+}
+
+.shotclock-light {
+    background-color: rgba(255,255,255,255);
+    position: absolute;
     opacity: 15%;
-    height: 2%;
-    width: 80%;
+    height: 50%;
+    width: 100%;
 }
 
 .player {
@@ -115,7 +129,70 @@ body {
     color: white;
     font-family: Aspira, serif;
     font-size: 1em;
-    width: 7%;
-    height: 25%;
-    margin: 10px auto 0;
+    line-height: 1rem;
+    width: auto;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px 4px 8px;
+    text-align: center;
+}
+
+/* Style for shot clock containers */
+.shotclock {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    padding: 2px 2px 2px 0;
+    color: white;
+    font-family: Aspira, serif;
+    text-align: center;
+}
+
+/* Position player shot clocks on opposite sides */
+#p1-shotclock {
+    left: 26%;
+    bottom: 15px;
+}
+#p2-shotclock {
+    right: 21%;
+    bottom: 15px;
+}
+
+/* The visual bar for the countdown */
+.shotclock-bar {
+    height: 100%;
+    background-color: green;
+    transition: width 1s linear;
+}
+
+/* The numeric time display (overlaying the bar) */
+.shotclock-time {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    left: -50px;
+    background-color: black;
+    line-height: 40px;
+    border: 2px solid white;
+    font-size: 1.5em;
+    pointer-events: none;
+}
+
+/* The extension indicator */
+.shotclock-extension {
+    position: absolute;
+    font-weight: bold;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: -92px;
+    top: 0;
+    background: green;
+    color: white;
+    width: 40px;
+    border: 2px solid white;
 }
